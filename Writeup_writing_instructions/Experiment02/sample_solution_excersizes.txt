@@ -1,0 +1,54 @@
+a. Wish Hello to person 
+
+main :: IO ()
+main = do
+  putStrLn "Enter your name:"
+  name <- getLine
+  putStrLn "Hello" ++ name
+
+b. Addition function for mixed inputs
+
+add :: Num a => a -> a -> a
+add x y = x + y
+main :: IO ()
+main = do
+ putStrLn "Enter Operand 1:"
+ a <- getLine
+ putStrLn "Enter Oprand 2:"
+ b <- getLine
+ print $ add (read a :: Double) (read b :: Double)
+
+
+c. Subtraction function for mixed inputs  
+
+sub :: Num a => a -> a -> a
+sub x y = x - y
+main :: IO ()
+main = do
+ putStrLn "Enter Operand 1:"
+ a <- getLine
+ putStrLn "Enter Oprand 2:"
+ b <- getLine
+ print $ sub (read a :: Double) (read b :: Double)
+
+d Multiplication function for mixed inputs
+
+mult :: Num a => a -> a -> a
+mult x y = x * y
+main :: IO ()
+main = do
+ putStrLn "Enter Operand 1:"
+ a <- getLine
+ putStrLn "Enter Oprand 2:"
+ b <- getLine
+ print $ mult (read a :: Double) (read b :: Double)
+    
+e. Find square root of input number
+
+main :: IO ()
+main = do
+  putStrLn "Enter" 
+  input1 <- getLine
+  let a = read input1 :: Double
+  print $ sqrt $ a
+
